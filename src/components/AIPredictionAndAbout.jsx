@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Cpu, Leaf, FlaskConical, Waves, Github, ExternalLink } from 'lucide-react';
+import { Cpu, Leaf, FlaskConical, Waves } from 'lucide-react';
 
 const AIPredictionAndAbout = () => {
   return (
@@ -23,14 +23,14 @@ const AIPredictionAndAbout = () => {
           <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
             <Cpu className="h-3.5 w-3.5 text-[#80FFEA]" /> AI Regression Model
           </div>
-          <h3 className="text-2xl font-semibold md:text-3xl">Overflow prediction with 95%+ accuracy</h3>
+          <h3 className="text-2xl font-semibold md:text-3xl">Predict rising water with 95%+ accuracy</h3>
           <p className="mt-4 text-white/70">
-            Our AI regression model predicts overflow times with over 95% accuracy. Each tank’s trend is analyzed in real-time to forecast drain risk and send proactive alerts.
+            Our AI learns seasonal patterns and rainfall impact to forecast when drains or tanks will hit caution and critical thresholds, giving you time to act.
           </p>
           <div className="mt-6 grid grid-cols-2 gap-3 text-sm text-white/70">
-            <Badge icon={<FlaskConical className="h-4 w-4" />} label="Flask Backend" />
+            <Badge icon={<FlaskConical className="h-4 w-4" />} label="FastAPI Backend" />
             <Badge icon={<Waves className="h-4 w-4" />} label="Ultrasonic Sensors" />
-            <Badge icon={<Leaf className="h-4 w-4" />} label="Eco-first Design" />
+            <Badge icon={<Leaf className="h-4 w-4" />} label="Sustainable Cities" />
             <Badge icon={<Cpu className="h-4 w-4" />} label="Real-time Inference" />
           </div>
         </div>
@@ -38,12 +38,12 @@ const AIPredictionAndAbout = () => {
 
       {/* About & Mission */}
       <div className="mt-16 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-        <h4 className="text-xl font-semibold">Our Mission: Flood-Free Smart Cities</h4>
+        <h4 className="text-xl font-semibold">Our Mission: Flood-Resilient Infrastructure</h4>
         <p className="mt-3 max-w-3xl text-white/70">
-          Storm Water Monitoring System is an innovation from IEM Kolkata that combines IoT and AI to predict urban drain overflow with precision. Our mission is to create sustainable, flood-resilient smart cities.
+          We combine IoT sensors and AI analytics to monitor water levels, predict overflow, and protect communities. Built for municipalities, campuses, and industry.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-white/70">
-          <Badge icon={<FlaskConical className="h-4 w-4" />} label="Flask" />
+          <Badge icon={<FlaskConical className="h-4 w-4" />} label="FastAPI" />
           <Badge icon={<Cpu className="h-4 w-4" />} label="React" />
           <Badge icon={<Waves className="h-4 w-4" />} label="GSM" />
           <Badge icon={<Leaf className="h-4 w-4" />} label="Sustainability" />
@@ -66,12 +66,12 @@ const AIPredictionAndAbout = () => {
         <div className="relative z-10 flex flex-col items-center justify-between gap-4 text-center text-white/70 md:flex-row md:text-left">
           <div>
             <div className="text-white">Built with ❤️ by Team Binary Bondhu — IEM Kolkata</div>
-            <div className="text-sm">© {new Date().getFullYear()} Storm Water Monitoring System</div>
+            <div className="text-sm">© {new Date().getFullYear()} Water Level Monitoring System</div>
           </div>
           <nav className="flex items-center gap-6">
             <a className="hover:text-white" href="#">Home</a>
             <a className="hover:text-white" href="#dashboard">Dashboard</a>
-            <a className="hover:text-white" href="#">Documentation</a>
+            <a className="hover:text-white" href="#how-it-works">How It Works</a>
             <a className="hover:text-white" href="#">Contact</a>
           </nav>
         </div>

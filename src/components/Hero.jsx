@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Gauge } from 'lucide-react';
+import { ArrowRight, Waves } from 'lucide-react';
 import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
@@ -29,8 +29,8 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-md"
         >
-          <Gauge className="h-4 w-4 text-[#80FFEA]" />
-          <span className="text-xs tracking-wide text-white/80">Real-time AI Water Intelligence</span>
+          <Waves className="h-4 w-4 text-[#80FFEA]" />
+          <span className="text-xs tracking-wide text-white/80">Real-time Water Level Intelligence</span>
         </motion.div>
 
         <motion.h1
@@ -39,7 +39,7 @@ const Hero = () => {
           transition={{ duration: 0.9, delay: 0.1 }}
           className="mt-6 max-w-5xl bg-gradient-to-r from-white via-[#80FFEA] to-white bg-clip-text text-4xl font-semibold leading-tight text-transparent md:text-7xl"
         >
-          AI-Powered Storm Water Monitoring System
+          AI Water Level Monitoring & Flood Alerts
         </motion.h1>
 
         <motion.p
@@ -48,7 +48,7 @@ const Hero = () => {
           transition={{ duration: 0.9, delay: 0.2 }}
           className="mt-5 max-w-2xl text-base text-white/80 md:text-lg"
         >
-          Predict. Prevent. Protect. A smarter approach to flood prevention.
+          Measure, predict, and prevent overflows across tanks, drains, and reservoirs—before they happen.
         </motion.p>
 
         <motion.div
@@ -61,7 +61,7 @@ const Hero = () => {
             href="#dashboard"
             className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-[#00F5D4] px-6 py-3 font-medium text-[#0E0E1A] shadow-[0_0_30px_rgba(0,245,212,0.35)] transition-transform hover:scale-[1.02]"
           >
-            <span className="relative z-10">\uD83D\uDD0D View Live Dashboard</span>
+            <span className="relative z-10">View Live Levels</span>
             <span className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,#80FFEA40,transparent_40%)] transition-opacity duration-300 group-hover:opacity-100" />
           </a>
 
@@ -69,7 +69,7 @@ const Hero = () => {
             href="#how-it-works"
             className="group inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-white/90 backdrop-blur-md transition-colors hover:border-[#80FFEA]/40 hover:bg-white/10"
           >
-            <span>\u2699\uFE0F How It Works</span>
+            <span>How It Works</span>
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         </motion.div>

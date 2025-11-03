@@ -1,24 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Droplets, Cpu, Radio } from 'lucide-react';
+import { Droplets, Bell, Cpu } from 'lucide-react';
 
 const features = [
   {
     icon: Droplets,
-    title: 'Real-Time Monitoring',
-    desc: 'Tracks drain and tank levels using ultrasonic precision.',
+    title: 'Precision Water Sensing',
+    desc: 'Ultrasonic level measurement for tanks, drains, and reservoirs in real time.',
     accent: '#80FFEA',
   },
   {
     icon: Cpu,
-    title: 'AI Prediction Engine',
-    desc: 'Forecasts overflow before it occurs with regression modeling.',
+    title: 'AI Overflow Prediction',
+    desc: 'Forecast rise and overflow windows with regression-based confidence.',
     accent: '#00F5D4',
   },
   {
-    icon: Radio,
-    title: 'Offline GSM Alerts',
-    desc: 'Sends instant SMS warnings without internet connectivity.',
+    icon: Bell,
+    title: 'Smart Alerts & Thresholds',
+    desc: 'Get SMS/email alerts when levels cross configured safety bands.',
     accent: '#FFD166',
   },
 ];
@@ -27,8 +27,8 @@ const Features = () => {
   return (
     <section id="how-it-works" className="relative z-10 mx-auto max-w-7xl px-6 py-24 text-white">
       <div className="mx-auto mb-12 max-w-3xl text-center">
-        <h2 className="text-3xl font-semibold md:text-4xl">Powerful, Intelligent Capabilities</h2>
-        <p className="mt-3 text-white/70">Glassmorphic design with neural glow and fluid animations.</p>
+        <h2 className="text-3xl font-semibold md:text-4xl">Water Level Monitoring, Reimagined</h2>
+        <p className="mt-3 text-white/70">Glassmorphism UI with neural glow, tuned for clarity in critical moments.</p>
       </div>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -58,7 +58,7 @@ const Features = () => {
             </div>
             <p className="mt-3 text-white/70">{f.desc}</p>
             <div className="mt-6 h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-            <div className="mt-4 text-sm text-white/60">Framer Motion tilt & glow on hover.</div>
+            <div className="mt-4 text-sm text-white/60">Designed for municipal, campus, and industrial sites.</div>
           </motion.div>
         ))}
       </div>
